@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parking', '0003_parking_name'),
+        ('config', '0003_parking_name'),
     ]
 
     operations = [
@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             name='ParkingSpot',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('parking_id', models.ForeignKey(on_delete='CASCADE', related_name='parking_spot', to='parking.Parking')),
+                ('parking_id', models.ForeignKey(on_delete=models.CASCADE, related_name='parking_spot', to='config.Parking')),
             ],
         ),
     ]

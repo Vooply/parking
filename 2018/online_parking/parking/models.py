@@ -22,7 +22,7 @@ class ParkingSpot(models.Model):
 
     parking_id = models.ForeignKey(
         Parking,
-        on_delete="CASCADE",
+        on_delete=models.CASCADE,
         related_name="parking_spot",
     )
     name = models.CharField(max_length=80, default="")

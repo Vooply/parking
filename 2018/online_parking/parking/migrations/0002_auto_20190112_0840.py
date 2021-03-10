@@ -6,12 +6,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('parking', '0001_initial'),
+        ('config', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='parking',
+            model_name='config',
             name='capacity',
             field=models.IntegerField(),
         ),
